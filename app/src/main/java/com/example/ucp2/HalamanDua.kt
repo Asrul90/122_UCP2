@@ -25,7 +25,9 @@ fun HalamanDetail(
         Pair(stringResource(R.string.nama), orderUIState.nama),
         Pair(stringResource(R.string.nim), orderUIState.nim),
         Pair(stringResource(R.string.konsentrasi), orderUIState.konsentrasi) ,
-        Pair(stringResource(R.string.dosen), orderUIState.dosen)
+        Pair(stringResource(R.string.dosen), orderUIState.dosen),
+        Pair(stringResource(R.string.judul), orderUIState.judul),
+     Pair(stringResource(R.string.dosen), orderUIState.dosen2)
     )
     Column(
         modifier = modifier,

@@ -27,7 +27,7 @@ class OrderViewModel : ViewModel(){
     }
 
     fun setD2(pilih: String){
-        _stateUI.update { currentState -> currentState.copy(dosen = pilih)}
+        _stateUI.update { currentState -> currentState.copy(dosen2 = pilih)}
     }
 
 

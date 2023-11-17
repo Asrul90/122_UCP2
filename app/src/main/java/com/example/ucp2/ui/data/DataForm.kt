@@ -6,4 +6,5 @@ data class DataForm(
     val konsentrasi: String = "",
     val judul: String = "",
     val dosen: String = "",
+    val dosen2: String = "",
 )
