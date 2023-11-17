@@ -18,6 +18,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
 
 @Composable
 fun HalamanHome (
@@ -43,7 +44,7 @@ fun HalamanHome (
             verticalAlignment = Alignment.Bottom
         ) {
             Button(
-                modifier = Modifier.fillMaxWidth(),
+                modifier = Modifier.fillMaxWidth().padding(100.dp),
                 onClick = onNextButtonClicked
             ) {
                 Text(stringResource(id = R.string.btn_next))
