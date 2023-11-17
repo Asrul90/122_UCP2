@@ -49,7 +49,8 @@ fun HalamanForm(
     var nim by rememberSaveable { mutableStateOf("") }
     var konsentrasi by rememberSaveable { mutableStateOf("") }
     var judul by remember { mutableStateOf("") }
-    var dosenYgDipilih by remember { mutableStateOf("") }
+    var dosenpilihan1 by remember { mutableStateOf("") }
+    var dosenyangakandipilih by remember { mutableStateOf("") }
 
 
     var listData: MutableList<String> = mutableListOf(nama, nim, konsentrasi, judul)
@@ -98,16 +99,16 @@ fun HalamanForm(
                         )
                         dosenPilihan.forEach { item ->
                             Row(modifier = Modifier.selectable(
-                                selected = dosenYgDipilih == item,
+                                selected = dosenpilihan1 == item,
                                 onClick = {
-                                    dosenYgDipilih = item
+                                    dosenpilihan1 = item
                                     onSelectionChanged(item)
                                 }
                             ),
                                 verticalAlignment = Alignment.CenterVertically) {
-                                RadioButton(selected = dosenYgDipilih == item,
+                                RadioButton(selected = dosenpilihan1 == item,
                                     onClick = {
-                                        dosenYgDipilih = item
+                                        dosenpilihan1 = item
                                         onSelectionChanged(item)
                                     }
                                 )
@@ -120,16 +121,16 @@ fun HalamanForm(
                     )
                         dosenPilihan.forEach { item ->
                             Row(modifier = Modifier.selectable(
-                                selected = dosenYgDipilih == item,
+                                selected = dosenyangakandipilih == item,
                                 onClick = {
-                                    dosenYgDipilih = item
+                                    dosenyangakandipilih = item
                                     onPilihChanged(item)
                                 }
                             ),
                                 verticalAlignment = Alignment.CenterVertically) {
-                                RadioButton(selected = dosenYgDipilih == item,
+                                RadioButton(selected = dosenyangakandipilih == item,
                                     onClick = {
-                                        dosenYgDipilih = item
+                                        dosenyangakandipilih = item
                                         onPilihChanged(item)
                                     }
                                 )

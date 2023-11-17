@@ -42,17 +42,18 @@ fun HalamanDetail(
                     Text(text = item.second.toString())
                 }
                 Spacer(modifier = Modifier.height(dimensionResource(R.dimen.padding_small)))
-                Row(
-                    modifier = Modifier
-                        .weight(1f, false)
-                        .padding(dimensionResource(R.dimen.padding_medium))
+
+                }
+            Row(
+                modifier = Modifier
+                    .weight(1f, false)
+                    .padding(dimensionResource(R.dimen.padding_medium))
+            ) {
+                OutlinedButton(
+                    modifier = Modifier.fillMaxWidth(),
+                    onClick = onCancelButtonClicked
                 ) {
-                    OutlinedButton(
-                        modifier = Modifier.fillMaxWidth(),
-                        onClick = onCancelButtonClicked
-                    ) {
-                        Text(stringResource(R.string.btn_back))
-                    }
+                    Text(stringResource(R.string.btn_back))
                 }
             }
         }
